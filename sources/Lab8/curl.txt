@@ -1,0 +1,4 @@
+curl -X POST https://api.dropboxapi.com/2/check/app ^
+    --header "Authorization: Basic MG16MnBrNTZrenF4MG1rOmxzNm5lMG85N3FsNnM3ag==" ^
+    --header "Content-Type: application/json" ^
+    --data "{\"query\":\"foo\"}"

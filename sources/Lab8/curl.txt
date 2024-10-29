@@ -1,0 +1,13 @@
+test =>
+
+curl -X POST https://api.dropboxapi.com/2/check/app ^ --header "Authorization: Basic MG16MnBrNTZrenF4MG1rOmxzNm5lMG85N3FsNnM3ag==" ^ --header "Content-Type: application/json" ^ --data "{\"query\":\"foo\"}"
+
+for instance => 
+
+https://www.dropbox.com/1/oauth2/authorize_submit
+
+curl https://api.dropbox.com/oauth2/token ^ -d code=lG5x7AEIeroAAAAAAAAAoAw8QVbX75rxd4RDcEj0FUg ^ -d grant_type=authorization_code ^ -d client_id=0mz2pk56kzqx0mk ^ -d client_secret=ls6ne0o97ql6s7j
+
+curl -X POST https://api.dropboxapi.com/2/files/list_folder --header "Authorization: Bearer sl.B2bkfDa2ddyS2u03Pky_rCTqrN4TGCkR6aU-zwwjOtdh_Z9A71-0PLrOrXpNh57fDnCxy45gYZyn6nkdWI7h3E6LnrFnJADM2GXrZTCm0nlIibKsSML_kgsiRtrd-ZgOjNRJ07riUCh1" --header "Content-Type: application/json" --data '{"include_deleted": false, "include_has_explicit_shared_members": false, "include_media_info": false, "include_mounted_folders": true, "include_non_downloadable_files": true, "path": "","recursive":true}'
+
+P.S. change tokens, keys and etc
